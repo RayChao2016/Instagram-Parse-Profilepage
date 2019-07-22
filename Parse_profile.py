@@ -1,5 +1,3 @@
-import random
-
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -46,10 +44,6 @@ def daily_post1():
 
                     post_y_img = js['edge_owner_to_timeline_media']['edges'][y]['node']['display_url']
 		
-
-                    post_y_date = datetime.datetime.date(post_y_time)
-                    post_y_date_shift = post_y_date + timedelta(days=5)
-                    str_post_y_date_shift = post_y_date_shift.strftime("%Y-%m-%d")
                     
             else:
                 print('private, ' + ig_x_account)
